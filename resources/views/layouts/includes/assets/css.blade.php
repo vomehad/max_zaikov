@@ -1,12 +1,18 @@
-<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-{{--<link rel="stylesheet"--}}
-{{--      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"--}}
-{{--      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"--}}
-{{--      crossorigin="anonymous"--}}
-{{-->--}}
+{{--<link rel="stylesheet" href="{{ mix('/css/app.css') }}">--}}
+<link href="https://www.artis21.ru/local/templates/.default/components/bitrix/system.pagenavigation/.default/style.css?1618239337561" type="text/css"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/components/bitrix/news.list/slider/style.css?1618239351168" type="text/css"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/components/bitrix/catalog.section.list/sections_main/style.css?16684327502845" type="text/css"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/css/normalize.css?16182393086138" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/js/slick/slick.css?16233268691776" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/js/vendor/jQueryUI/jquery-ui.css?16182393217141" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/css/OverlayScrollbars.css?163673254524251" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/css/os-theme-round-dark.css?16367325742305" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/css/jquery.fancybox.min.css?161823930812799" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/css/jquery.formstyler.css?161823930813171" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/css/main.css?168905355266866" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/components/bitrix/search.form/header_search/style.css?1618239352452" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="https://www.artis21.ru/local/templates/artis21.ru/template_styles.css?168742597341705" type="text/css"  data-template-style="true"  rel="stylesheet" />
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+
 @stack('styles')
