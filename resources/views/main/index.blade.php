@@ -6,7 +6,8 @@
                 <i></i>
             </div>
             <a href="/">
-                <img src="/logo_1.jpg" alt="" width="130" height="130">
+                <img src="/logo_1.jpg" alt="" width="100" height="100">
+                <img src="/logo_1.svg" alt="" width="100" height="100">
             </a>
 
 
@@ -152,6 +153,7 @@
                 </div>
                 <a href="/" class="topper__logo">
                     <img src="/logo_1.jpg" alt="" width="130" height="130">
+                    <img src="/logo_1.svg" alt="" width="130" height="130">
                 </a>
                 <div class="topper__contacts">
                     <div itemscope itemtype="http://schema.org/Organization" style="display: none;">
