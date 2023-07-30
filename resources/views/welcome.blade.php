@@ -1,140 +1,2219 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Интернет-магазин фабрики АРТИС предлагает купить купить мебель от производителя по низким ценам. Ознакомиться с каталогом мягкой мебели, уточнить стоимость и оставить заявку на доставку товаров в Москве и всем регионам России можно на сайте." />
+    <link href="https://www.artis21.ru/local/templates/.default/components/bitrix/system.pagenavigation/.default/style.css?1618239337561" type="text/css"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/components/bitrix/news.list/slider/style.css?1618239351168" type="text/css"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/components/bitrix/catalog.section.list/sections_main/style.css?16684327502845" type="text/css"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/css/normalize.css?16182393086138" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/js/slick/slick.css?16233268691776" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/js/vendor/jQueryUI/jquery-ui.css?16182393217141" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/css/OverlayScrollbars.css?163673254524251" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/css/os-theme-round-dark.css?16367325742305" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/css/jquery.fancybox.min.css?161823930812799" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/css/jquery.formstyler.css?161823930813171" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/css/main.css?168905355266866" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/components/bitrix/search.form/header_search/style.css?1618239352452" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="https://www.artis21.ru/local/templates/artis21.ru/template_styles.css?168742597341705" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+    <script type="text/javascript">(window.BX||top.BX).message({'pull_server_enabled':'N','pull_config_timestamp':'0','pull_guest_mode':'N','pull_guest_user_id':'0'});(window.BX||top.BX).message({'PULL_OLD_REVISION':'Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.'});</script>
+    <script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
 
-        <title>Laravel</title>
+    <script type="text/javascript" src="/bitrix/js/main/core/core.js?1662378448478527"></script>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+        BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+    <script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','UTF_MODE':'Y','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1690742449','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'acd14611b3215064605a5ffdbdbff685'});</script>
 
-        <!-- Styles -->
-        <style>
-            /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Figtree, sans-serif;font-feature-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.relative{position:relative}.mx-auto{margin-left:auto;margin-right:auto}.mx-6{margin-left:1.5rem;margin-right:1.5rem}.ml-4{margin-left:1rem}.mt-16{margin-top:4rem}.mt-6{margin-top:1.5rem}.mt-4{margin-top:1rem}.-mt-px{margin-top:-1px}.mr-1{margin-right:0.25rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-16{height:4rem}.h-7{height:1.75rem}.h-6{height:1.5rem}.h-5{height:1.25rem}.min-h-screen{min-height:100vh}.w-auto{width:auto}.w-16{width:4rem}.w-7{width:1.75rem}.w-6{width:1.5rem}.w-5{width:1.25rem}.max-w-7xl{max-width:80rem}.shrink-0{flex-shrink:0}.scale-100{--tw-scale-x:1;--tw-scale-y:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.items-center{align-items:center}.justify-center{justify-content:center}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.self-center{align-self:center}.rounded-lg{border-radius:0.5rem}.rounded-full{border-radius:9999px}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity))}.bg-dots-darker{background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E")}.from-gray-700\/50{--tw-gradient-from:rgb(55 65 81 / 0.5);--tw-gradient-to:rgb(55 65 81 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0);--tw-gradient-stops:var(--tw-gradient-from), transparent, var(--tw-gradient-to)}.bg-center{background-position:center}.stroke-red-500{stroke:#ef4444}.stroke-gray-400{stroke:#9ca3af}.p-6{padding:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.text-center{text-align:center}.text-right{text-align:right}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-gray-500\/20{--tw-shadow-color:rgb(107 114 128 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-red-500 *::selection{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.selection\:bg-red-500::selection{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.hover\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.hover\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity))}.focus\:rounded-sm:focus{border-radius:0.125rem}.focus\:outline:focus{outline-style:solid}.focus\:outline-2:focus{outline-width:2px}.focus\:outline-red-500:focus{outline-color:#ef4444}.group:hover .group-hover\:stroke-gray-600{stroke:#4b5563}.z-10{z-index: 10}@media (prefers-reduced-motion: no-preference){.motion-safe\:hover\:scale-\[1\.01\]:hover{--tw-scale-x:1.01;--tw-scale-y:1.01;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}}@media (prefers-color-scheme: dark){.dark\:bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:bg-gray-800\/50{background-color:rgb(31 41 55 / 0.5)}.dark\:bg-red-800\/20{background-color:rgb(153 27 27 / 0.2)}.dark\:bg-dots-lighter{background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E")}.dark\:bg-gradient-to-bl{background-image:linear-gradient(to bottom left, var(--tw-gradient-stops))}.dark\:stroke-gray-600{stroke:#4b5563}.dark\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity))}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.dark\:ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.dark\:ring-inset{--tw-ring-inset:inset}.dark\:ring-white\/5{--tw-ring-color:rgb(255 255 255 / 0.05)}.dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.group:hover .dark\:group-hover\:stroke-gray-400{stroke:#9ca3af}}@media (min-width: 640px){.sm\:fixed{position:fixed}.sm\:top-0{top:0px}.sm\:right-0{right:0px}.sm\:ml-0{margin-left:0px}.sm\:flex{display:flex}.sm\:items-center{align-items:center}.sm\:justify-center{justify-content:center}.sm\:justify-between{justify-content:space-between}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:gap-8{gap:2rem}.lg\:p-8{padding:2rem}}
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-            @if (Route::has('login'))
-                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
-                    @auth
-                        <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+    <script type="text/javascript" src="/bitrix/js/pull/protobuf/protobuf.js?1658756865274055"></script>
+    <script type="text/javascript" src="/bitrix/js/pull/protobuf/model.js?165875686570928"></script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_promise.js?16587564185220"></script>
+    <script type="text/javascript" src="/bitrix/js/rest/client/rest.client.js?165875687217414"></script>
+    <script type="text/javascript" src="/bitrix/js/pull/client/pull.client.js?165875707270481"></script>
+    <script type="text/javascript">
+        (function () {
+            "use strict";
 
-            <div class="max-w-7xl mx-auto p-6 lg:p-8">
-                <div class="flex justify-center">
-                    <svg viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto bg-gray-100 dark:bg-gray-900">
-                        <path d="M61.8548 14.6253C61.8778 14.7102 61.8895 14.7978 61.8897 14.8858V28.5615C61.8898 28.737 61.8434 28.9095 61.7554 29.0614C61.6675 29.2132 61.5409 29.3392 61.3887 29.4265L49.9104 36.0351V49.1337C49.9104 49.4902 49.7209 49.8192 49.4118 49.9987L25.4519 63.7916C25.3971 63.8227 25.3372 63.8427 25.2774 63.8639C25.255 63.8714 25.2338 63.8851 25.2101 63.8913C25.0426 63.9354 24.8666 63.9354 24.6991 63.8913C24.6716 63.8838 24.6467 63.8689 24.6205 63.8589C24.5657 63.8389 24.5084 63.8215 24.456 63.7916L0.501061 49.9987C0.348882 49.9113 0.222437 49.7853 0.134469 49.6334C0.0465019 49.4816 0.000120578 49.3092 0 49.1337L0 8.10652C0 8.01678 0.0124642 7.92953 0.0348998 7.84477C0.0423783 7.8161 0.0598282 7.78993 0.0697995 7.76126C0.0884958 7.70891 0.105946 7.65531 0.133367 7.6067C0.152063 7.5743 0.179485 7.54812 0.20192 7.51821C0.230588 7.47832 0.256763 7.43719 0.290416 7.40229C0.319084 7.37362 0.356476 7.35243 0.388883 7.32751C0.425029 7.29759 0.457436 7.26518 0.498568 7.2415L12.4779 0.345059C12.6296 0.257786 12.8015 0.211853 12.9765 0.211853C13.1515 0.211853 13.3234 0.257786 13.475 0.345059L25.4531 7.2415H25.4556C25.4955 7.26643 25.5292 7.29759 25.5653 7.32626C25.5977 7.35119 25.6339 7.37362 25.6625 7.40104C25.6974 7.43719 25.7224 7.47832 25.7523 7.51821C25.7735 7.54812 25.8021 7.5743 25.8196 7.6067C25.8483 7.65656 25.8645 7.70891 25.8844 7.76126C25.8944 7.78993 25.9118 7.8161 25.9193 7.84602C25.9423 7.93096 25.954 8.01853 25.9542 8.10652V33.7317L35.9355 27.9844V14.8846C35.9355 14.7973 35.948 14.7088 35.9704 14.6253C35.9792 14.5954 35.9954 14.5692 36.0053 14.5405C36.0253 14.4882 36.0427 14.4346 36.0702 14.386C36.0888 14.3536 36.1163 14.3274 36.1375 14.2975C36.1674 14.2576 36.1923 14.2165 36.2272 14.1816C36.2559 14.1529 36.292 14.1317 36.3244 14.1068C36.3618 14.0769 36.3942 14.0445 36.4341 14.0208L48.4147 7.12434C48.5663 7.03694 48.7383 6.99094 48.9133 6.99094C49.0883 6.99094 49.2602 7.03694 49.4118 7.12434L61.3899 14.0208C61.4323 14.0457 61.4647 14.0769 61.5021 14.1055C61.5333 14.1305 61.5694 14.1529 61.5981 14.1803C61.633 14.2165 61.6579 14.2576 61.6878 14.2975C61.7103 14.3274 61.7377 14.3536 61.7551 14.386C61.7838 14.4346 61.8 14.4882 61.8199 14.5405C61.8312 14.5692 61.8474 14.5954 61.8548 14.6253ZM59.893 27.9844V16.6121L55.7013 19.0252L49.9104 22.3593V33.7317L59.8942 27.9844H59.893ZM47.9149 48.5566V37.1768L42.2187 40.4299L25.953 49.7133V61.2003L47.9149 48.5566ZM1.99677 9.83281V48.5566L23.9562 61.199V49.7145L12.4841 43.2219L12.4804 43.2194L12.4754 43.2169C12.4368 43.1945 12.4044 43.1621 12.3682 43.1347C12.3371 43.1097 12.3009 43.0898 12.2735 43.0624L12.271 43.0586C12.2386 43.0275 12.2162 42.9888 12.1887 42.9539C12.1638 42.9203 12.1339 42.8916 12.114 42.8567L12.1127 42.853C12.0903 42.8156 12.0766 42.7707 12.0604 42.7283C12.0442 42.6909 12.023 42.656 12.013 42.6161C12.0005 42.5688 11.998 42.5177 11.9931 42.4691C11.9881 42.4317 11.9781 42.3943 11.9781 42.3569V15.5801L6.18848 12.2446L1.99677 9.83281ZM12.9777 2.36177L2.99764 8.10652L12.9752 13.8513L22.9541 8.10527L12.9752 2.36177H12.9777ZM18.1678 38.2138L23.9574 34.8809V9.83281L19.7657 12.2459L13.9749 15.5801V40.6281L18.1678 38.2138ZM48.9133 9.14105L38.9344 14.8858L48.9133 20.6305L58.8909 14.8846L48.9133 9.14105ZM47.9149 22.3593L42.124 19.0252L37.9323 16.6121V27.9844L43.7219 31.3174L47.9149 33.7317V22.3593ZM24.9533 47.987L39.59 39.631L46.9065 35.4555L36.9352 29.7145L25.4544 36.3242L14.9907 42.3482L24.9533 47.987Z" fill="#FF2D20"/>
+            var counter = function ()
+            {
+                var cookie = (function (name) {
+                    var parts = ("; " + document.cookie).split("; " + name + "=");
+                    if (parts.length == 2) {
+                        try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+                        catch (e) {}
+                    }
+                })("BITRIX_CONVERSION_CONTEXT_s1");
+
+                if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+                    return;
+
+                var request = new XMLHttpRequest();
+                request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+                request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                request.send(
+                    "SITE_ID="+encodeURIComponent("s1")+
+                    "&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+                    "&HTTP_REFERER="+encodeURIComponent(document.referrer)
+                );
+            };
+
+            if (window.frameRequestStart === true)
+                BX.addCustomEvent("onFrameDataReceived", counter);
+            else
+                BX.ready(counter);
+        })();
+    </script>
+
+
+
+    <script type="text/javascript" src="https://www.artis21.ru/local/templates/artis21.ru/js/jquery-3.2.1.min.js?162332667886659"></script>
+    <script type="text/javascript" src="https://www.artis21.ru/local/templates/artis21.ru/components/bitrix/catalog.section.list/sections_main/script.js?1670234409530"></script>
+    <script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "ee50144e58c8cf236e75b846fe54dc9f"]); _ba.push(["host", "www.artis21.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+    <title>Мебель от производителя - купить в интернет-магазине: цены от фабрики АРТИС</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(2018065, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true,
+            ecommerce:"dataLayer"
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/2018065" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript">
+        var __cs = __cs || [];
+        __cs.push(["setCsAccount", "Ue7WQEKclInYgIxtKdA6DIThLiC8kgMd"]);
+    </script>
+    <script type="text/javascript" async src="https://app.comagic.ru/static/cs.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63394860-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63394860-1');
+    </script>
+    <meta name="p:domain_verify" content="1fdbedc30bb0e1707a0639120624290f"/>
+
+    <meta name="mailru-verification" content="8662530db6812ea8" />
+    <meta name="google-site-verification" content="yD2m34k7f6cYCcudEJG7KlE-VYGH8sm9mjuS8Ws72zQ" />
+
+    <script>
+        !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+            )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+            ttq.load('C8134IKRMF4VVL6MGNFG');
+            ttq.page();
+        }(window, document, 'ttq');
+    </script>
+
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css" integrity="sha512-Ho1L8FTfzcVPAlvfkL1BV/Lmy1JDUVAP82/LkhmKbRX5PnQ7CNDHAUp2GZe7ybBpovS+ssJDf+SlBOswrpFr8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+    <!--    <link rel="stylesheet" href="https://www.jqueryscript.net/demo/Custom-Overlay-Scrollbar-jQuery/css/os-theme-round-dark.css">-->
+
+    <script async defer src="https://cdn.leadplan.ru/loader.js?sk=e1974314162e0568813c845dead79494"></script>
+    <script charset="UTF-8" src="//web.webpushs.com/js/push/464fb02e1c5032fb3ac344252a067099_1.js" async></script>
+</head>
+<body>
+<div class="content">
+    <div class="offset__leftcol">
+        <div class="offset_leftcol__container">
+            <div class="offset_leftcol__nav_toggle">
+                <i></i>
+            </div>
+            <a href="/">
+                <img src="https://www.artis21.ru/local/templates/artis21.ru/img/logo.svg" class="offset_leftcol__logo" alt="" width="147" height="35">
+            </a>
+
+
+            <form action="/search/index.php" class="offset_leftcol__search">
+                <input type="text" name="q" value="" placeholder="Поиск ..." id="search-popup">
+                <button type="submit">
+                    <svg width="18" height="18" viewBox="0 0 18 18">
+                        <use xlink:href="https://www.artis21.ru/local/templates/artis21.ru/img/offset_search_icon.svg#search"></use>
                     </svg>
-                </div>
+                </button>
+                <div class="search__close"></div>
+            </form>
 
-                <div class="mt-16">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                        <a href="https://laravel.com/docs" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                                    </svg>
-                                </div>
 
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Documentation</h2>
 
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
-                                </p>
-                            </div>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
 
-                        <a href="https://laracasts.com" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
-                                    </svg>
-                                </div>
+            <nav class="offset_leftcol__nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <div class="offset_leftcol__item offset_leftcol__parent">
 
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laracasts</h2>
 
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </p>
-                            </div>
+                    <a itemprop="url" href="/catalog/"><span itemprop="name">Каталог</span></a>
+                    <div class="offset_leftcol__subnav offset_leftcol__subnav-active">
+                        <a href="/catalog/vse-tovary/shkafy/" >Шкафы</a>
+                        <a href="/catalog/vse-tovary/krovati/" >Кровати</a>
+                        <a href="/catalog/vse-tovary/komody/" >Комоды</a>
+                        <a href="/catalog/vse-tovary/tumby/" >Тумбы</a>
+                        <a href="/catalog/vse-tovary/stoly/" >Столы</a>
+                        <a href="/catalog/vse-tovary/stellazhi/" >Стеллажи</a>
+                        <a rel="nofollow" href="http://kuhni.artis21.ru" >Кухни</a>
+                        <a href="/catalog/spalni/norden/" >Шкафы-купе</a>
+                        <a href="/catalog/vse-tovary/myagkaya-mebel/" >Мягкая мебель</a>
+                        <a href="/catalog/garderobnye/" >Гардеробные</a>
+                        <a href="/catalog/spalni/spalni-matrasy/artis/" >Матрасы</a>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
-
-                        <a href="https://laravel-news.com" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
-                                    </svg>
-                                </div>
-
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laravel News</h2>
-
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </p>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
-
-                        <div class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" />
-                                    </svg>
-                                </div>
-
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</h2>
-
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Forge</a>, <a href="https://vapor.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Vapor</a>, <a href="https://nova.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Nova</a>, and <a href="https://envoyer.io" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Telescope</a>, and more.
-                                </p>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="offset_leftcol_item__trigger offset_leftcol_item__trigger-catalog active">
+                        <i class="active"></i>
                     </div>
                 </div>
+                <div class="offset_leftcol__item offset_leftcol__parent">
 
-                <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-left">
-                        <div class="flex items-center gap-4">
-                            <a href="https://github.com/sponsors/taylorotwell" class="group inline-flex items-center hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="-mt-px mr-1 w-5 h-5 stroke-gray-400 dark:stroke-gray-600 group-hover:stroke-gray-600 dark:group-hover:stroke-gray-400">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                                </svg>
-                                Sponsor
+
+                    <a itemprop="url" href="/interiors/"><span itemprop="name">Готовые композиции</span></a>
+                    <div class="offset_leftcol__subnav ">
+                        <a href="/interiors/shkafy/" >Шкафы</a>
+                        <a href="/interiors/mebel-v-prikhozhuyu/" >Мебель в прихожую</a>
+                        <a href="/interiors/mebel-v-gostinuyu/" >Мебель в гостиную</a>
+                        <a href="/interiors/mebel-dlya-spalni/" >Мебель для спальни</a>
+                        <a href="/interiors/mebel-dlya-doma/" >Мебель для дома</a>
+                        <a href="/interiors/stenki/" >Стенки</a>
+                        <a href="/interiors/biblioteka/" >Библиотека</a>
+                        <a href="/interiors/detskaya-komnata/" >Детская комната</a>
+
+                    </div>
+                    <div class="offset_leftcol_item__trigger offset_leftcol_item__trigger2row">
+                        <i class="active"></i>
+                    </div>
+                </div>
+                <div class="offset_leftcol__item offset_leftcol__parent">
+
+
+                    <a itemprop="url" href="/buyers/"><span itemprop="name">Покупателям</span></a>
+                    <div class="offset_leftcol__subnav ">
+                        <a href="/buyers/payment/" >Оплата</a>
+                        <a href="/buyers/delivery/" >Доставка</a>
+                        <a href="/buyers/feedback/" >Задать вопрос</a>
+                        <a href="/buyers/discount/" >Дисконтная программа</a>
+                        <a href="/buyers/3d/" >3D</a>
+                        <a href="/vyzov-dizaynera/" >Вызов дизайнера</a>
+                        <a href="/buyers/instructions/" >Инструкции по сборке</a>
+                        <a href="/buyers/garantiya/" >Гарантия</a>
+
+                    </div>
+                    <div class="offset_leftcol_item__trigger">
+                        <i class="active"></i>
+                    </div>
+                </div>
+                <div class="offset_leftcol__item offset_leftcol__parent">
+
+
+                    <a itemprop="url" href="/about/"><span itemprop="name">О компании</span></a>
+                    <div class="offset_leftcol__subnav ">
+                        <a href="/about/materials-and-technologies/" >Материалы и технологии</a>
+                        <a href="/about/news/" >Новости</a>
+                        <a href="/otzyvy/" >Отзывы</a>
+
+                    </div>
+                    <div class="offset_leftcol_item__trigger">
+                        <i class="active"></i>
+                    </div>
+                </div>
+                <div class="offset_leftcol__item offset_leftcol__parent">
+
+
+                    <a itemprop="url" href="/vacancy/"><span itemprop="name">Вакансии</span></a>
+                    <div class="offset_leftcol__subnav ">
+                        <a href="/vacancy/roznichnaya-set/" > Розничная сеть</a>
+                        <a href="/vacancy/golovnoy-ofis-zelenograd/" >Головной офис (Зеленоград)</a>
+                        <a href="/vacancy/proizvodstvo-zelenograd/" >Производство (Зеленоград)</a>
+
+                    </div>
+                    <div class="offset_leftcol_item__trigger">
+                        <i class="active"></i>
+                    </div>
+                </div>
+                <div class="offset_leftcol__item offset_leftcol__parent">
+
+
+                    <a itemprop="url" href="/contacts/"><span itemprop="name">Контакты</span></a>
+                    <div class="offset_leftcol__subnav ">
+                        <a href="/contacts/uchebnyy-tsentr.php" >Офис г. Москва</a>
+                        <a href="/contacts/golovnoy-ofis-i-proizvodstvo.php" >Головной офис и производство</a>
+                        <a href="/contacts/suppliers/" >Поставщикам</a>
+
+                    </div>
+                    <div class="offset_leftcol_item__trigger">
+                        <i class="active"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="offset_leftcol__contacts topper__contacts">
+                <div>
+                    Интернет-магазин 10:00 - 21:00
+                    <img src="https://www.artis21.ru/local/templates/artis21.ru/img/phone_white.svg" alt="">
+                    <a href="tel:+7 (495) 720-26-48">+7 (495) 720-26-48</a>
+                    <a href="javascript:void(0)" class="mobile-callback headerCallback">Заказать звонок</a>
+                </div>
+            </div>
+
+            <div class="offset_leftcol__socials">
+                <div class="offset_leftcol__socials_container">
+                    <a rel="nofollow" href="https://vk.com/mebel_artis" class="vk" target="_blank">
+                        <svg width="18" height="12" viewBox="0 0 18 12">
+                            <use xlink:href="https://www.artis21.ru/local/templates/artis21.ru/img/social_icons.svg#vk"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="maincol">
+        <div class="topper">
+            <div class="topper__container">
+                <div class="offset_leftcol__nav_toggle">
+                    <i></i>
+                </div>
+                <a href="/" class="topper__logo">
+                    <img src="https://www.artis21.ru/local/templates/artis21.ru/img/logo.svg" alt="" width="147" height="35">
+                </a>
+                <div class="topper__contacts">
+                    <div itemscope itemtype="http://schema.org/Organization" style="display: none;">
+                        <div itemprop="name">Корпусная мебель «АРТИС»</div>
+                        <link itemprop="url" href="/">
+                        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <span itemprop="postalCode">141441</span>,
+                            <span itemprop="addressCountry">Россия</span>,
+                            <span itemprop="addressRegion">Московская обл.</span>,
+                            <span itemprop="addressLocality">Солнечногорский район, д. Елино</span>,
+                            <span itemprop="streetAddress">ул. Летняя, стр. 1</span>
+                        </div>
+                        <div>Телефон: <a itemprop="telephone" href="tel:+74959660028">+7 (495) 966-00-28</a></div>
+                        <div>Почта:
+                            <link itemprop="email" href="mail@artis21.ru">
+                        </div>
+                    </div>
+                    <div class="topper__contacts-row topper__contacts-row-ofice">
+                        <div>
+
+
+
+                            <a href="tel:8 800 301 50 01" class="topper__contacts__phone">
+                                <div class="topper__contacts__phoneBlock">
+                                    <img src="https://www.artis21.ru/local/templates/artis21.ru/img/phone_white.svg" alt="">
+                                    <img class="topper__contacts__phoneBlock__grey" src="https://www.artis21.ru/local/templates/artis21.ru/img/phone_gray.svg" alt="">
+                                    <span>8 (800) 301-50-01</span>
+                                </div>
+                                <div class="topper__contacts__grafik">
+                                    Головной офис 9.00 - 20.00
+                                </div>
                             </a>
                         </div>
                     </div>
+                    <div class="topper__contacts-row topper__contacts-row-shop">
+                        <div>
+                            <a href="tel:+7 (495) 720-26-48" class="topper__contacts__phone">
+                                <div class="topper__contacts__phoneBlock">
+                                    <img src="https://www.artis21.ru/local/templates/artis21.ru/img/phone_white.svg" alt="">
+                                    <img class="topper__contacts__phoneBlock__grey" src="https://www.artis21.ru/local/templates/artis21.ru/img/phone_gray.svg" alt="">
+                                    <span>+7 (495) 720-26-48</span>
+                                </div>
+                                <div class="topper__contacts__grafik">
+                                    Интернет-магазин 10.00 - 21.00
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                <div class="topper__contacts-row topper__contacts-row-buttons">
+                    <div class="topper__contacts-row-buttons-row">
+                        <a href="https://wa.me/79250283213?text=Здравствуйте!%20Хочу%20вызвать%20дизайнера!" class="topper__contacts-row-buttons-whatsap-link" target="_blank" rel="nofollow">WhatsApp</a>
+                        <a href="/vyzov-dizaynera/">Вызвать дизайнера</a>
+                    </div>
+                    <div class="topper__contacts-row-buttons-row">
+                        <a href="#salons" class="topper__contacts-row-buttons-row topper__contacts-row-buttons-anchor">
+                            <div class="topper__contacts-row-buttons-img"></div>
+                            <div class="topper__contacts-row-buttons-salons">Салоны</div>
+                        </a>
+                        <a rel="nofollow" href="javascript:void(0);" class="headerCallback">Заказать звонок</a>
+                    </div>
+                </div>
+
+                <div class="topper__phoneIcon">
+                    <a rel="nofollow" href="tel:+74957202648"><img src="https://www.artis21.ru/local/templates/artis21.ru/img/phone_gray02.svg" alt="" width="16" height="16"></a>
+                </div>
+
+
+                <div class="topper__wa">
+                    <a href="https://wa.me/79250283213?text=Здравствуйте!%20Хочу%20вызвать%20дизайнера!" class="topper__contacts-row-buttons-whatsap-link" target="_blank" rel="nofollow"></a>
+                </div>
+
+                <div class="topper__basket">
+                    <a href="/personal/basket/">
+                        <div class="top_basket_wr" id="baskettop">
+
+                            <!--'start_frame_cache_baskettop'-->
+
+                            <svg width="20" height="20" viewBox="0 0 20 20">
+                                <use xlink:href="https://www.artis21.ru/local/templates/artis21.ru/img/basket_icon.svg#basket"></use>
+                            </svg>
+
+                            <!--'end_frame_cache_baskettop'-->                                                    </div>
+                    </a>
+                </div>
+
+                <div class="topper_search__container">
+
+
+                    <form action="/search/index.php" class="offset_leftcol__search">
+                        <input type="text" name="q" value="" placeholder="Поиск ..." id="search-popup">
+                        <button type="submit">
+                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                <use xlink:href="https://www.artis21.ru/local/templates/artis21.ru/img/offset_search_icon.svg#search"></use>
+                            </svg>
+                        </button>
+                        <div class="search__close"></div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main_slider main_slider_desc">
+            <div class="js-main_slider__container">
+                <div>
+                    <a href="/about/news/571507.php">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/098/we12r8hs58o9d91tkuelchqqkr9s8i6b.webp">
+                            <img  src="https://www.artis21.ru/upload/resize_cache/webp/iblock/098/we12r8hs58o9d91tkuelchqqkr9s8i6b.webp" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/gostinye/gostinye-bergen/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/7b6/7b6e695794f599843d9045e87a5f4b54.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/7b6/7b6e695794f599843d9045e87a5f4b54.webp" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/gostinye/gostinye-elizaveta5/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/477/kb9rtfpvj0rxzsep8vguma5doshc69af.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/477/kb9rtfpvj0rxzsep8vguma5doshc69af.jpg" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/garderobnye/marbelya/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/95a/95ac14ea0f81abeaf68186a8c027d2d6.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/95a/95ac14ea0f81abeaf68186a8c027d2d6.jpg" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/detskie/detskie-elizaveta5/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/fde/fde934ec5d1a6844a1baf078f0f29d85.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/fde/fde934ec5d1a6844a1baf078f0f29d85.jpg" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/spalni/spalni-granada/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/318/318628439a5f1d4978ba02c6a486a24b.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/318/318628439a5f1d4978ba02c6a486a24b.jpg" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/gostinye/toledogostinye-toledo/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/479/4793b78b8226ff8838900be0c312023b.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/479/4793b78b8226ff8838900be0c312023b.jpg" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/detskie/ivisa-2/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/ac7/ac7df5f0d8fc9ce01798110acb454b23.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/ac7/ac7df5f0d8fc9ce01798110acb454b23.jpg" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="catalog/spalni/spalni-lozanna/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/734/734813c32c03ece9464b1d9044e61150.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/734/734813c32c03ece9464b1d9044e61150.webp" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="catalog/spalni/toledo/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/993/99379b01b0ca377fd0fab284c51eb398.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/993/99379b01b0ca377fd0fab284c51eb398.jpg" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="catalog/gostinye/gostinye-lozanna/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/d6f/d6f86bcae818fdb0fd6639123b1370a7.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/d6f/d6f86bcae818fdb0fd6639123b1370a7.jpg" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/prikhozhie/prikhozhie-toledo/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/438/91rjb2bch8rk33j5uixlo1ug0wzi6sua.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/438/91rjb2bch8rk33j5uixlo1ug0wzi6sua.jpg" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <div>
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/280/ti082kryvr1fprc8505tmiyob1ov3rah.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/280/ti082kryvr1fprc8505tmiyob1ov3rah.jpg" width="1920" height="750" style="object-fit: contain;" alt="">
+                        </picture>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+
+        <div class="main_slider main_slider_mob">
+            <div class="js-main_slider__container">
+                <div>
+                    <a href="/about/news/571507.php">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/db5/vuzlruqc5wk332uuk4842rpzz3zfzst1.webp">
+                            <img  src="https://www.artis21.ru/upload/resize_cache/webp/iblock/db5/vuzlruqc5wk332uuk4842rpzz3zfzst1.webp" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/gostinye/gostinye-bergen/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/057/05738864acd877b712af4c50e2424260.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/057/05738864acd877b712af4c50e2424260.jpg" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/gostinye/gostinye-elizaveta5/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/d8f/eyhno05ao7jerhza4lyuzwgkdaqpgyio.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/d8f/eyhno05ao7jerhza4lyuzwgkdaqpgyio.jpg" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/garderobnye/marbelya/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/756/756cbf6a672d57c739ecfde31d266278.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/756/756cbf6a672d57c739ecfde31d266278.jpg" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/detskie/detskie-elizaveta5/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/4d1/4d1cfc465ac392d48d0716a976750771.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/4d1/4d1cfc465ac392d48d0716a976750771.jpg" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/spalni/spalni-granada/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/0b1/0b199a6afd8989cce5cdbbb0722beabb.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/0b1/0b199a6afd8989cce5cdbbb0722beabb.jpg" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/gostinye/toledogostinye-toledo/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/50c/50ca84acdc87c18bc1229e29e5601161.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/50c/50ca84acdc87c18bc1229e29e5601161.jpg" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/detskie/ivisa-2/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/52e/52ef084b50350dceeb022ac979fa1f86.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/52e/52ef084b50350dceeb022ac979fa1f86.jpg" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="catalog/spalni/spalni-lozanna/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/842/842d214d5ee6e65255f6d5fd462add86.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/842/842d214d5ee6e65255f6d5fd462add86.webp" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="catalog/spalni/toledo/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/4ed/4edd57f65a6d4fc7445851c558d97716.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/4ed/4edd57f65a6d4fc7445851c558d97716.jpg" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="catalog/gostinye/gostinye-lozanna/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/b5a/b5a0cd9cf8eb0ba94f39f983d865e15d.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/b5a/b5a0cd9cf8eb0ba94f39f983d865e15d.webp" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="/catalog/prikhozhie/prikhozhie-toledo/">
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/aa6/g2zdo6bt8d9xwybph5qs8bupwa76wnuf.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/aa6/g2zdo6bt8d9xwybph5qs8bupwa76wnuf.jpg" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <div>
+                        <picture>
+                            <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/c82/8dvlsysskv1yj6als8vdk3mq0v0wpupz.webp">
+                            <img loading="lazy" src="https://www.artis21.ru/upload/iblock/c82/8dvlsysskv1yj6als8vdk3mq0v0wpupz.jpg" width="700" height="520" style="object-fit: contain;" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .main_slider.main_slider_mob {
+                display:none;
+            }
+            @media screen and (max-width: 700px) {
+                .main_slider.main_slider_desc {
+                    display: none;
+                }
+                .main_slider.main_slider_mob {
+                    display:block;
+                }
+            }
+        </style>
+
+        <div class="advantages side_margin_mob">
+            <div class="advantages__item">
+                <i>
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <use xlink:href="https://www.artis21.ru/local/templates/artis21.ru/img/advantages_icons.svg#icon_1"></use>
+                    </svg>
+                </i>
+                5 лет гарантии
+            </div>
+            <div class="advantages__item">
+                <i>
+                    <svg width="25" height="25" viewBox="0 0 25 25">
+                        <use xlink:href="https://www.artis21.ru/local/templates/artis21.ru/img/advantages_icons.svg#icon_2"></use>
+                    </svg>
+                </i>
+                Рассрочка без переплаты
+            </div>
+            <div class="advantages__item">
+                <i>
+                    <svg width="30" height="30" viewBox="0 0 30 30">
+                        <use xlink:href="https://www.artis21.ru/local/templates/artis21.ru/img/advantages_icons.svg#icon_4"></use>
+                    </svg>
+                </i>
+                Доставка 48 часов
+            </div>
+        </div>
+
+        <div class="container containerMainPage">
+            <a href="/catalog/" class="main-page-catalog-title"><h1>Мебель от производителя «АРТИС»</h1></a>
+
+
+
+
+            <div class="catalog__categories catalog__categories__mobile">
+
+                <a href="/catalog/gostinye/"><h2>Гостиные</h2></a>
+
+                <div class="overlayScrollbars section-catalog">
+                    <div class="overlayScrollbars__wrap">
+
+
+                        <div class="catalog_categories__row"
+                             data-count="8">
+
+
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/gostinye/gostinye-lozanna/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/2e2/nk1nsaieat6trok16v06ikd2s5u7hpy5.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/2e2/nk1nsaieat6trok16v06ikd2s5u7hpy5.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/gostinye/gostinye-lozanna/"
+                                       class="catalog_categories__name">
+                                        Лозанна                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/gostinye/gostinye-granada/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/c50/c5070354aa36d71cc2663d0a958b9f7c.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/iblock/c50/c5070354aa36d71cc2663d0a958b9f7c.jpg" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/gostinye/gostinye-granada/"
+                                       class="catalog_categories__name">
+                                        Гранада                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/gostinye/gostinye-elizaveta5/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/b0b/x8vlsokjfs72zt5zlk5lijrxhg45rnko.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/b0b/x8vlsokjfs72zt5zlk5lijrxhg45rnko.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/gostinye/gostinye-elizaveta5/"
+                                       class="catalog_categories__name">
+                                        Елизавета                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/gostinye/gostinye-elika/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/475/ueer3ie3qtv8oq72kg29e3tj3f06ni03.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/475/ueer3ie3qtv8oq72kg29e3tj3f06ni03.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/gostinye/gostinye-elika/"
+                                       class="catalog_categories__name">
+                                        Элика                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/gostinye/toledogostinye-toledo/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/aff/aff2b279108c4909aad726c7b4aa0455.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/aff/aff2b279108c4909aad726c7b4aa0455.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/gostinye/toledogostinye-toledo/"
+                                       class="catalog_categories__name">
+                                        Толедо                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/gostinye/gostinye-bergen/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/583/5834761dcaf0da3a1c642a295bf2f223.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/583/5834761dcaf0da3a1c642a295bf2f223.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/gostinye/gostinye-bergen/"
+                                       class="catalog_categories__name">
+                                        Берген                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/gostinye/divan/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/c97/c97d323a829cdd330b007bdd81577e72.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/iblock/c97/c97d323a829cdd330b007bdd81577e72.jpg" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/gostinye/divan/"
+                                       class="catalog_categories__name">
+                                        Диваны                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/gostinye/zhurnalnye-stoly/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/708/708eb5b6115277f58737b83a8aef2062.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/708/708eb5b6115277f58737b83a8aef2062.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/gostinye/zhurnalnye-stoly/"
+                                       class="catalog_categories__name">
+                                        Журнальные столы                                </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <a href="/catalog/prikhozhie/"><h2>Прихожие</h2></a>
+
+                <div class="overlayScrollbars section-catalog">
+                    <div class="overlayScrollbars__wrap">
+
+
+                        <div class="catalog_categories__row"
+                             data-count="4">
+
+
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/prikhozhie/prikhozhie-toledo/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/3e2/r9tjsnaha8sb8ljryzdwr8kf1xbfrttz.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/iblock/3e2/r9tjsnaha8sb8ljryzdwr8kf1xbfrttz.jpg" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/prikhozhie/prikhozhie-toledo/"
+                                       class="catalog_categories__name">
+                                        Толедо                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/prikhozhie/prikhozhie-elizaveta5/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/fc2/fc2831d636c3464b382f370a5061dd5a.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/fc2/fc2831d636c3464b382f370a5061dd5a.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/prikhozhie/prikhozhie-elizaveta5/"
+                                       class="catalog_categories__name">
+                                        Елизавета                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/prikhozhie/prikhozhie-ivisa/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/b65/b65d6838476fe5b4b2a4f4513e8d05cb.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/b65/b65d6838476fe5b4b2a4f4513e8d05cb.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/prikhozhie/prikhozhie-ivisa/"
+                                       class="catalog_categories__name">
+                                        Ивиса                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/prikhozhie/prikhozhie-granada/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/466/466f5dcb153040f966e5f5afe19e809d.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/466/466f5dcb153040f966e5f5afe19e809d.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/prikhozhie/prikhozhie-granada/"
+                                       class="catalog_categories__name">
+                                        Гранада                                </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <a href="/catalog/spalni/"><h2>Спальни</h2></a>
+
+                <div class="overlayScrollbars section-catalog">
+                    <div class="overlayScrollbars__wrap">
+
+
+                        <div class="catalog_categories__row"
+                             data-count="8">
+
+
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/spalni/toledo/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/505/505d5de865bb21ae6bc30ca7e109321a.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/505/505d5de865bb21ae6bc30ca7e109321a.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/spalni/toledo/"
+                                       class="catalog_categories__name">
+                                        Толедо                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/spalni/spalni-granada/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/404/404c506c4453ff47f35c0178728e04a5.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/404/404c506c4453ff47f35c0178728e04a5.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/spalni/spalni-granada/"
+                                       class="catalog_categories__name">
+                                        Гранада                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/spalni/elizaveta/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/594/0i1jd0dd5ily4xzf7ik4bvxw01dp51wm.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/594/0i1jd0dd5ily4xzf7ik4bvxw01dp51wm.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/spalni/elizaveta/"
+                                       class="catalog_categories__name">
+                                        Елизавета                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/spalni/spalni-lozanna/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/198/1982d9bf7ce10414c27ded0165fd0530.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/198/1982d9bf7ce10414c27ded0165fd0530.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/spalni/spalni-lozanna/"
+                                       class="catalog_categories__name">
+                                        Лозанна 2                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/spalni/ravenna/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/45c/45cb8074f7fcc89d0bc51f3ec73a8456.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/iblock/45c/45cb8074f7fcc89d0bc51f3ec73a8456.jpg" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/spalni/ravenna/"
+                                       class="catalog_categories__name">
+                                        Равенна                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/spalni/norden/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/fef/fef4a544ba79582f86f631d347f17590.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/fef/fef4a544ba79582f86f631d347f17590.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/spalni/norden/"
+                                       class="catalog_categories__name">
+                                        Шкафы-купе Норден                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/spalni/spalni-matrasy/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/c32/c3204b4c95e635c2fb6def4a254351ca.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/c32/c3204b4c95e635c2fb6def4a254351ca.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/spalni/spalni-matrasy/"
+                                       class="catalog_categories__name">
+                                        Матрасы                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/spalni/krovati/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/99b/99bcea8b1442c141d02da13c5ab5d628.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/99b/99bcea8b1442c141d02da13c5ab5d628.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/spalni/krovati/"
+                                       class="catalog_categories__name">
+                                        Кровати                                </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <a href="/catalog/biblioteki/"><h2>Библиотеки</h2></a>
+
+                <div class="overlayScrollbars section-catalog">
+                    <div class="overlayScrollbars__wrap">
+
+
+                        <div class="catalog_categories__row"
+                             data-count="2">
+
+
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/biblioteki/biblioteki-elizaveta5/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/e17/e175de85ab4661069fbe212eb3d2b6cf.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/e17/e175de85ab4661069fbe212eb3d2b6cf.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/biblioteki/biblioteki-elizaveta5/"
+                                       class="catalog_categories__name">
+                                        Елизавета                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/biblioteki/biblioteki-elika/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/6b4/ocpv3hi570k2g31amq0axo3cz3wbh62i.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/iblock/6b4/ocpv3hi570k2g31amq0axo3cz3wbh62i.jpg" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/biblioteki/biblioteki-elika/"
+                                       class="catalog_categories__name">
+                                        Элика                                </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <a href="/catalog/detskie/"><h2>Детские</h2></a>
+
+                <div class="overlayScrollbars section-catalog">
+                    <div class="overlayScrollbars__wrap">
+
+
+                        <div class="catalog_categories__row"
+                             data-count="3">
+
+
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/detskie/ivisa-2/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/67c/67cb5a0ebe54a12a95cb70a33e619fdc.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/iblock/67c/67cb5a0ebe54a12a95cb70a33e619fdc.jpg" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/detskie/ivisa-2/"
+                                       class="catalog_categories__name">
+                                        Ивиса 2                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/detskie/detskie-elizaveta5/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/c49/c49134b7567713b9c9856444fcd866a1.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/c49/c49134b7567713b9c9856444fcd866a1.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/detskie/detskie-elizaveta5/"
+                                       class="catalog_categories__name">
+                                        Елизавета                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/detskie/detskie-elika/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/373/iable5tnrt1amnzdwhomgzmamqu08koo.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/iblock/373/iable5tnrt1amnzdwhomgzmamqu08koo.jpg" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/detskie/detskie-elika/"
+                                       class="catalog_categories__name">
+                                        Элика                                </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <a href="/catalog/garderobnye/"><h2>Гардеробные</h2></a>
+
+                <div class="overlayScrollbars section-catalog">
+                    <div class="overlayScrollbars__wrap">
+
+
+                        <div class="catalog_categories__row">
+
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/garderobnye/marbelya/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/4d8/4d895892b872a4e38750ff7896a56a26.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/4d8/4d895892b872a4e38750ff7896a56a26.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/garderobnye/marbelya/"
+                                       class="catalog_categories__name">
+                                        Марбелья                                </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <a href="/catalog/kukhni/"><h2>Кухни</h2></a>
+
+                <div class="overlayScrollbars section-catalog">
+                    <div class="overlayScrollbars__wrap">
+
+
+                        <div class="catalog_categories__row"
+                             data-count="11">
+
+
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a href="/catalog/kukhni/obedennye-stoly/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/326/3264661e66dd8c90b9beb8f5756760ff.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/326/3264661e66dd8c90b9beb8f5756760ff.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a href="/catalog/kukhni/obedennye-stoly/"
+                                       class="catalog_categories__name">
+                                        Обеденные столы                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru/skip"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/5ab/ap4gmquhnk8ka1jm1xzs9eu5ey4p928v.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/5ab/ap4gmquhnk8ka1jm1xzs9eu5ey4p928v.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a rel="nofollow" href="http://kuhni.artis21.ru/skip"
+                                       class="catalog_categories__name">
+                                        Скип                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru/elara"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/ee7/ee73ae7d0755cdf5c338b9a147f4de78.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/ee7/ee73ae7d0755cdf5c338b9a147f4de78.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a rel="nofollow" href="http://kuhni.artis21.ru/elara"
+                                       class="catalog_categories__name">
+                                        Элара                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru/Atik"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/iblock/cf2/lrmucwn2rgvrnnffq6focwa6maqjqoq2.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/iblock/cf2/lrmucwn2rgvrnnffq6focwa6maqjqoq2.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a rel="nofollow" href="http://kuhni.artis21.ru/Atik"
+                                       class="catalog_categories__name">
+                                        Атик                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru/navi"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/661/661a2c8fde9c13c25dada5d9483db9ab.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/661/661a2c8fde9c13c25dada5d9483db9ab.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a rel="nofollow" href="http://kuhni.artis21.ru/navi"
+                                       class="catalog_categories__name">
+                                        Нави                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru/astrid"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/26f/26f7d718bce5b79ba6f6a8a2471d25da.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/26f/26f7d718bce5b79ba6f6a8a2471d25da.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a rel="nofollow" href="http://kuhni.artis21.ru/astrid"
+                                       class="catalog_categories__name">
+                                        Астрид                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru/nova"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/c92/c92fd95c15e08a76e841bc58ed0b509c.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/c92/c92fd95c15e08a76e841bc58ed0b509c.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a rel="nofollow" href="http://kuhni.artis21.ru/nova"
+                                       class="catalog_categories__name">
+                                        Нова                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru/kapella"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/263/26347f6758e814064261a80e205ffadc.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/263/26347f6758e814064261a80e205ffadc.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a rel="nofollow" href="http://kuhni.artis21.ru/kapella"
+                                       class="catalog_categories__name">
+                                        Капелла                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru/vega"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/af4/af40be9adffb4f5ae4174567f44a02fc.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/af4/af40be9adffb4f5ae4174567f44a02fc.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a rel="nofollow" href="http://kuhni.artis21.ru/vega"
+                                       class="catalog_categories__name">
+                                        Вега                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru/Til"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/7a0/7a0d0f3e9cf3982bd1f7026fcc507260.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/7a0/7a0d0f3e9cf3982bd1f7026fcc507260.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a rel="nofollow" href="http://kuhni.artis21.ru/Til"
+                                       class="catalog_categories__name">
+                                        Тиль                                </a>
+                                </div>
+
+                            </div>
+                            <div class="catalog_categories__item" style="border-radius: small">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru/atria"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/upload/resize_cache/webp/iblock/644/644f8af47d870339ff52abb8b50a2ba2.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/upload/resize_cache/webp/iblock/644/644f8af47d870339ff52abb8b50a2ba2.webp" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+
+                                <div class="catalog_categories__container">
+                                    <a rel="nofollow" href="http://kuhni.artis21.ru/atria"
+                                       class="catalog_categories__name">
+                                        Атриа                                </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <a href="/catalog/spalni/norden/"><h2>Шкафы-купе</h2></a>
+
+                <div class="overlayScrollbars section-catalog">
+                    <div class="overlayScrollbars__wrap">
+
+
+                        <div class="catalog_categories__row">
+
+                            <div class="catalog_categories__item" style="border-radius: small">
+                                <a href="/catalog/spalni/norden/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/local/templates/artis21.ru/img/kupe-main.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/local/templates/artis21.ru/img/kupe-main.jpg" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <a href="/catalog/gostinye/divan/"><h2>Мягкая мебель</h2></a>
+
+                <div class="overlayScrollbars section-catalog">
+                    <div class="overlayScrollbars__wrap">
+
+
+                        <div class="catalog_categories__row">
+
+                            <div class="catalog_categories__item" style="border-radius: small">
+                                <a href="/catalog/gostinye/divan/"
+                                   class="catalog_categories__link catalog_categories__link--cover catalog_categories__link-mob">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://www.artis21.ru/local/templates/artis21.ru/img/divani-main.webp">
+                                        <img loading="lazy" src="https://www.artis21.ru/local/templates/artis21.ru/img/divani-main.jpg" alt="" class="catalog_categories__img">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="catalog__categories catalog__categories__desktop">
+                <div class="catalog_categories__wrap">
+                    <div class="catalog_categories__row">
+
+                        <div class="catalog_categories__item">
+
+                            <a href="/catalog/gostinye/"
+                               style="background: url(https://www.artis21.ru/upload/resize_cache/webp/uf/9ce/9ce491b13b08c88a1f8f683303399a0a.webp) no-repeat center center /cover"
+                               class="catalog_categories__link catalog_categories__link--cover" id="4">
+                            </a>
+
+
+                            <div class="catalog_categories__container">
+
+                                <a href="/catalog/gostinye/" data-idsection="4"
+                                   data-path="https://www.artis21.ru/upload/resize_cache/webp/uf/9ce/9ce491b13b08c88a1f8f683303399a0a.webp" class="catalog_categories__name">
+                                    Гостиные                        </a>
+
+                                <div class="catalog_categories__sub">
+
+
+                                    <a data-idsection="4"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/2e2/nk1nsaieat6trok16v06ikd2s5u7hpy5.webp"
+                                       href="/catalog/gostinye/gostinye-lozanna/"
+                                       class="catalog_categories_sub__item">Лозанна</a>
+                                    <a data-idsection="4"
+                                       data-path="https://www.artis21.ru/upload/iblock/c50/c5070354aa36d71cc2663d0a958b9f7c.jpg"
+                                       href="/catalog/gostinye/gostinye-granada/"
+                                       class="catalog_categories_sub__item">Гранада</a>
+                                    <a data-idsection="4"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/b0b/x8vlsokjfs72zt5zlk5lijrxhg45rnko.webp"
+                                       href="/catalog/gostinye/gostinye-elizaveta5/"
+                                       class="catalog_categories_sub__item">Елизавета</a>
+                                    <a data-idsection="4"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/475/ueer3ie3qtv8oq72kg29e3tj3f06ni03.webp"
+                                       href="/catalog/gostinye/gostinye-elika/"
+                                       class="catalog_categories_sub__item">Элика</a>
+                                    <a data-idsection="4"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/aff/aff2b279108c4909aad726c7b4aa0455.webp"
+                                       href="/catalog/gostinye/toledogostinye-toledo/"
+                                       class="catalog_categories_sub__item">Толедо</a>
+                                    <a data-idsection="4"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/583/5834761dcaf0da3a1c642a295bf2f223.webp"
+                                       href="/catalog/gostinye/gostinye-bergen/"
+                                       class="catalog_categories_sub__item">Берген</a>
+                                    <a data-idsection="4"
+                                       data-path="https://www.artis21.ru/upload/iblock/c97/c97d323a829cdd330b007bdd81577e72.jpg"
+                                       href="/catalog/gostinye/divan/"
+                                       class="catalog_categories_sub__item">Диваны</a>
+                                    <a data-idsection="4"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/708/708eb5b6115277f58737b83a8aef2062.webp"
+                                       href="/catalog/gostinye/zhurnalnye-stoly/"
+                                       class="catalog_categories_sub__item">Журнальные столы</a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="catalog_categories__item">
+
+                            <a href="/catalog/prikhozhie/"
+                               style="background: url(https://www.artis21.ru/upload/resize_cache/webp/uf/7bb/7bbd7321952b1b9d8cda5c6f66b896c9.webp) no-repeat center center /cover"
+                               class="catalog_categories__link catalog_categories__link--cover" id="5">
+                            </a>
+
+
+                            <div class="catalog_categories__container">
+
+                                <a href="/catalog/prikhozhie/" data-idsection="5"
+                                   data-path="https://www.artis21.ru/upload/resize_cache/webp/uf/7bb/7bbd7321952b1b9d8cda5c6f66b896c9.webp" class="catalog_categories__name">
+                                    Прихожие                        </a>
+
+                                <div class="catalog_categories__sub">
+
+
+                                    <a data-idsection="5"
+                                       data-path="https://www.artis21.ru/upload/iblock/3e2/r9tjsnaha8sb8ljryzdwr8kf1xbfrttz.jpg"
+                                       href="/catalog/prikhozhie/prikhozhie-toledo/"
+                                       class="catalog_categories_sub__item">Толедо</a>
+                                    <a data-idsection="5"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/fc2/fc2831d636c3464b382f370a5061dd5a.webp"
+                                       href="/catalog/prikhozhie/prikhozhie-elizaveta5/"
+                                       class="catalog_categories_sub__item">Елизавета</a>
+                                    <a data-idsection="5"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/b65/b65d6838476fe5b4b2a4f4513e8d05cb.webp"
+                                       href="/catalog/prikhozhie/prikhozhie-ivisa/"
+                                       class="catalog_categories_sub__item">Ивиса</a>
+                                    <a data-idsection="5"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/466/466f5dcb153040f966e5f5afe19e809d.webp"
+                                       href="/catalog/prikhozhie/prikhozhie-granada/"
+                                       class="catalog_categories_sub__item">Гранада</a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="catalog_categories__wrap">
+                    <div class="catalog_categories__row">
+
+
+                        <div class="catalog_categories__item">
+
+                            <a href="/catalog/spalni/"
+                               style="background: url(https://www.artis21.ru/upload/resize_cache/webp/uf/c10/c10e7ca1810b1ab852ec760adfe81a00.webp) no-repeat center center /cover"
+                               class="catalog_categories__link catalog_categories__link--cover" id="6">
+                            </a>
+
+
+                            <div class="catalog_categories__container">
+
+                                <a href="/catalog/spalni/" data-idsection="6"
+                                   data-path="https://www.artis21.ru/upload/resize_cache/webp/uf/c10/c10e7ca1810b1ab852ec760adfe81a00.webp" class="catalog_categories__name">
+                                    Спальни                        </a>
+
+                                <div class="catalog_categories__sub">
+
+
+                                    <a data-idsection="6"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/505/505d5de865bb21ae6bc30ca7e109321a.webp"
+                                       href="/catalog/spalni/toledo/"
+                                       class="catalog_categories_sub__item">Толедо</a>
+                                    <a data-idsection="6"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/404/404c506c4453ff47f35c0178728e04a5.webp"
+                                       href="/catalog/spalni/spalni-granada/"
+                                       class="catalog_categories_sub__item">Гранада</a>
+                                    <a data-idsection="6"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/594/0i1jd0dd5ily4xzf7ik4bvxw01dp51wm.webp"
+                                       href="/catalog/spalni/elizaveta/"
+                                       class="catalog_categories_sub__item">Елизавета</a>
+                                    <a data-idsection="6"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/198/1982d9bf7ce10414c27ded0165fd0530.webp"
+                                       href="/catalog/spalni/spalni-lozanna/"
+                                       class="catalog_categories_sub__item">Лозанна 2</a>
+                                    <a data-idsection="6"
+                                       data-path="https://www.artis21.ru/upload/iblock/45c/45cb8074f7fcc89d0bc51f3ec73a8456.jpg"
+                                       href="/catalog/spalni/ravenna/"
+                                       class="catalog_categories_sub__item">Равенна</a>
+                                    <a data-idsection="6"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/fef/fef4a544ba79582f86f631d347f17590.webp"
+                                       href="/catalog/spalni/norden/"
+                                       class="catalog_categories_sub__item">Шкафы-купе Норден</a>
+                                    <a data-idsection="6"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/c32/c3204b4c95e635c2fb6def4a254351ca.webp"
+                                       href="/catalog/spalni/spalni-matrasy/"
+                                       class="catalog_categories_sub__item">Матрасы</a>
+                                    <a data-idsection="6"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/99b/99bcea8b1442c141d02da13c5ab5d628.webp"
+                                       href="/catalog/spalni/krovati/"
+                                       class="catalog_categories_sub__item">Кровати</a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="catalog_categories__item">
+
+                            <a href="/catalog/biblioteki/"
+                               style="background: url(https://www.artis21.ru/upload/resize_cache/webp/uf/c9a/c9a2dd5571423bda7aeac02a9abb19d1.webp) no-repeat center center /cover"
+                               class="catalog_categories__link catalog_categories__link--cover" id="7">
+                            </a>
+
+
+                            <div class="catalog_categories__container">
+
+                                <a href="/catalog/biblioteki/" data-idsection="7"
+                                   data-path="https://www.artis21.ru/upload/resize_cache/webp/uf/c9a/c9a2dd5571423bda7aeac02a9abb19d1.webp" class="catalog_categories__name">
+                                    Библиотеки                        </a>
+
+                                <div class="catalog_categories__sub">
+
+
+                                    <a data-idsection="7"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/e17/e175de85ab4661069fbe212eb3d2b6cf.webp"
+                                       href="/catalog/biblioteki/biblioteki-elizaveta5/"
+                                       class="catalog_categories_sub__item">Елизавета</a>
+                                    <a data-idsection="7"
+                                       data-path="https://www.artis21.ru/upload/iblock/6b4/ocpv3hi570k2g31amq0axo3cz3wbh62i.jpg"
+                                       href="/catalog/biblioteki/biblioteki-elika/"
+                                       class="catalog_categories_sub__item">Элика</a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="catalog_categories__item">
+
+                            <a href="/catalog/detskie/"
+                               style="background: url(https://www.artis21.ru/upload/resize_cache/webp/uf/e37/e37ac4314ca5582c3ad3d395640492d8.webp) no-repeat center center /cover"
+                               class="catalog_categories__link catalog_categories__link--cover" id="8">
+                            </a>
+
+
+                            <div class="catalog_categories__container">
+
+                                <a href="/catalog/detskie/" data-idsection="8"
+                                   data-path="https://www.artis21.ru/upload/resize_cache/webp/uf/e37/e37ac4314ca5582c3ad3d395640492d8.webp" class="catalog_categories__name">
+                                    Детские                        </a>
+
+                                <div class="catalog_categories__sub">
+
+
+                                    <a data-idsection="8"
+                                       data-path="https://www.artis21.ru/upload/iblock/67c/67cb5a0ebe54a12a95cb70a33e619fdc.jpg"
+                                       href="/catalog/detskie/ivisa-2/"
+                                       class="catalog_categories_sub__item">Ивиса 2</a>
+                                    <a data-idsection="8"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/c49/c49134b7567713b9c9856444fcd866a1.webp"
+                                       href="/catalog/detskie/detskie-elizaveta5/"
+                                       class="catalog_categories_sub__item">Елизавета</a>
+                                    <a data-idsection="8"
+                                       data-path="https://www.artis21.ru/upload/iblock/373/iable5tnrt1amnzdwhomgzmamqu08koo.jpg"
+                                       href="/catalog/detskie/detskie-elika/"
+                                       class="catalog_categories_sub__item">Элика</a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="catalog_categories__wrap">
+                    <div class="catalog_categories__row">
+
+
+                        <div class="catalog_categories__item">
+
+                            <a href="/catalog/garderobnye/"
+                               style="background: url(https://www.artis21.ru/upload/resize_cache/webp/uf/221/22123fd7c8c1771820b0f6d87b30f5b4.webp) no-repeat center center /cover"
+                               class="catalog_categories__link catalog_categories__link--cover" id="732">
+                            </a>
+
+
+                            <div class="catalog_categories__container">
+
+                                <a href="/catalog/garderobnye/" data-idsection="732"
+                                   data-path="https://www.artis21.ru/upload/resize_cache/webp/uf/221/22123fd7c8c1771820b0f6d87b30f5b4.webp" class="catalog_categories__name">
+                                    Гардеробные                        </a>
+
+                                <div class="catalog_categories__sub">
+
+
+                                    <a data-idsection="732"
+                                       data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/4d8/4d895892b872a4e38750ff7896a56a26.webp"
+                                       href="/catalog/garderobnye/marbelya/"
+                                       class="catalog_categories_sub__item">Марбелья</a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="catalog_categories__item">
+
+                            <a rel="nofollow" href="http://kuhni.artis21.ru"
+                               style="background: url(https://www.artis21.ru/upload/resize_cache/webp/uf/b3a/b3a5163b3bf1cfc4663fbe3dc69ecd21.webp) no-repeat center center /cover"
+                               class="catalog_categories__link catalog_categories__link--cover" id="984">
+                            </a>
+
+
+                            <div class="catalog_categories__container catalog_categories__container-wide">
+
+                                <a rel="nofollow" href="http://kuhni.artis21.ru" data-idsection="984"
+                                   data-path="https://www.artis21.ru/upload/resize_cache/webp/uf/b3a/b3a5163b3bf1cfc4663fbe3dc69ecd21.webp" class="catalog_categories__name">
+                                    Кухни                        </a>
+
+                                <div class="catalog_categories__sub">
+
+
+                                    <div class="catalog_categories__sub-cols">
+                                        <div class="catalog_categories__sub-cols-item">
+                                            <a data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/326/3264661e66dd8c90b9beb8f5756760ff.webp"
+                                               href="/catalog/kukhni/obedennye-stoly/"
+                                               class="catalog_categories_sub__item">Обеденные столы</a>
+                                            <a rel="nofollow" data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/5ab/ap4gmquhnk8ka1jm1xzs9eu5ey4p928v.webp"
+                                               href="http://kuhni.artis21.ru/skip"
+                                               class="catalog_categories_sub__item">Скип</a>
+                                            <a rel="nofollow" data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/ee7/ee73ae7d0755cdf5c338b9a147f4de78.webp"
+                                               href="http://kuhni.artis21.ru/elara"
+                                               class="catalog_categories_sub__item">Элара</a>
+                                            <a rel="nofollow" data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/iblock/cf2/lrmucwn2rgvrnnffq6focwa6maqjqoq2.webp"
+                                               href="http://kuhni.artis21.ru/Atik"
+                                               class="catalog_categories_sub__item">Атик</a>
+                                            <a rel="nofollow" data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/661/661a2c8fde9c13c25dada5d9483db9ab.webp"
+                                               href="http://kuhni.artis21.ru/navi"
+                                               class="catalog_categories_sub__item">Нави</a>
+                                            <a rel="nofollow" data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/26f/26f7d718bce5b79ba6f6a8a2471d25da.webp"
+                                               href="http://kuhni.artis21.ru/astrid"
+                                               class="catalog_categories_sub__item">Астрид</a>
+                                        </div>
+                                        <div class="catalog_categories__sub-cols-item">
+                                            <a rel="nofollow" data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/c92/c92fd95c15e08a76e841bc58ed0b509c.webp"
+                                               href="http://kuhni.artis21.ru/nova"
+                                               class="catalog_categories_sub__item">Нова</a>
+                                            <a rel="nofollow" data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/263/26347f6758e814064261a80e205ffadc.webp"
+                                               href="http://kuhni.artis21.ru/kapella"
+                                               class="catalog_categories_sub__item">Капелла</a>
+                                            <a rel="nofollow" data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/af4/af40be9adffb4f5ae4174567f44a02fc.webp"
+                                               href="http://kuhni.artis21.ru/vega"
+                                               class="catalog_categories_sub__item">Вега</a>
+                                            <a rel="nofollow" data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/7a0/7a0d0f3e9cf3982bd1f7026fcc507260.webp"
+                                               href="http://kuhni.artis21.ru/Til"
+                                               class="catalog_categories_sub__item">Тиль</a>
+                                            <a rel="nofollow" data-idsection="984"
+                                               data-path="https://www.artis21.ru/upload/resize_cache/webp/iblock/644/644f8af47d870339ff52abb8b50a2ba2.webp"
+                                               href="http://kuhni.artis21.ru/atria"
+                                               class="catalog_categories_sub__item">Атриа</a>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="catalog_categories__wrap">
+                    <div class="catalog_categories__row">
+
+
+                        <div class="catalog_categories__item">
+
+                            <a href="/catalog/spalni/norden/"
+                               style="background: url(https://www.artis21.ru/local/templates/artis21.ru/img/kupe-main.jpg) no-repeat center center /cover"
+                               class="catalog_categories__link catalog_categories__link--cover" id="">
+                            </a>
+
+
+                            <div class="catalog_categories__container">
+
+                                <a href="/catalog/spalni/norden/" data-idsection=""
+                                   data-path="" class="catalog_categories__name">
+                                    Шкафы-купе                        </a>
+
+                                <div class="catalog_categories__sub">
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="catalog_categories__item">
+
+                            <a href="/catalog/gostinye/divan/"
+                               style="background: url(https://www.artis21.ru/local/templates/artis21.ru/img/divani-main.jpg) no-repeat center center /cover"
+                               class="catalog_categories__link catalog_categories__link--cover" id="">
+                            </a>
+
+
+                            <div class="catalog_categories__container">
+
+                                <a href="/catalog/gostinye/divan/" data-idsection=""
+                                   data-path="" class="catalog_categories__name">
+                                    Мягкая мебель                        </a>
+
+                                <div class="catalog_categories__sub">
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="advantages side_margin">
+                <div class="advantages__item">
+                    <i>
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <use xlink:href="https://www.artis21.ru/local/templates/artis21.ru/img/advantages_icons.svg#icon_1"></use>
+                        </svg>
+                    </i>
+                    5 лет<br>
+                    гарантии
+                </div>
+                <div class="advantages__item">
+                    <i>
+                        <svg width="45" height="45" viewBox="0 0 45 45">
+                            <use xlink:href="https://www.artis21.ru/local/templates/artis21.ru/img/advantages_icons.svg#icon_2"></use>
+                        </svg>
+                    </i>
+                    Рассрочка<br>
+                    без переплаты
+                </div>
+                <div class="advantages__item">
+                    <i>
+                        <svg width="50" height="50" viewBox="0 0 50 50">
+                            <use xlink:href="https://www.artis21.ru/local/templates/artis21.ru/img/advantages_icons.svg#icon_4"></use>
+                        </svg>
+                    </i>
+                    Доставка<br>
+                    48 часов
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="info_mp__container bg_gray">
+            <div class="container">
+                <div class="info_slider js-info_slider">
+                    <div class="info_slider__item">
+                        <div class="info_slider__container">
+                            <div class="info_slider_item__date">24 июля 2023</div>
+                            <a href="/about/news/571507.php" class="info_slider_item__name">ВРЕМЯ ПОКУПАТЬ!</a>
+                            <a href="/about/news/571507.php" class="info_slider_item__descr">С 28.07 по 30.07 бесплатная доставка, шампанское и подарки всем покупателям!</a>
+                        </div>
+                    </div>
+                    <div class="info_slider__item">
+                        <div class="info_slider__container">
+                            <div class="info_slider_item__date">18 октября 2022</div>
+                            <a href="/about/news/528897.php" class="info_slider_item__name">Новинка! Новый цвет в коллекции для детских!</a>
+                            <a href="/about/news/528897.php" class="info_slider_item__descr">Коллекция &quot;Ивиса 2&quot; пополнилась новыми цветами! Спешите увидеть!</a>
+                        </div>
+                    </div>
+                    <div class="info_slider__item">
+                        <div class="info_slider__container">
+                            <div class="info_slider_item__date">18 октября 2022</div>
+                            <a href="/about/news/528895.php" class="info_slider_item__name">Новый фирменный салон</a>
+                            <a href="/about/news/528895.php" class="info_slider_item__descr">Уважаемые покупатели! Рады сообщить Вам, что 18.10.2022 г. открылся новый фирменный салон «АРТИС» по адресу: г. Пушкино, Красноармейское шоссе, стр. 104, ТРЦ Пушкино Парк &#40;Мебель&#41;.<br />
+                                Ждем вас ежедневно с 10.00 до 22.00</a>
+                        </div>
+                    </div>
+                    <div class="info_slider__item">
+                        <div class="info_slider__container">
+                            <div class="info_slider_item__date">09 сентября 2022</div>
+                            <a href="/about/news/521392.php" class="info_slider_item__name">Новый фирменный салон</a>
+                            <a href="/about/news/521392.php" class="info_slider_item__descr">Уважаемые покупатели! Рады сообщить Вам, что 10.09.2022 г. Открылся новый фирменный салон «АРТИС» по адресу: г. Москва, Сиреневый бульвар д31 ТРЦ «София» -1-й этаж. Ждем вас ежедневно с 10.00 до 22.00</a>
+                        </div>
+                    </div>
+                    <div class="info_slider__item">
+                        <div class="info_slider__container">
+                            <div class="info_slider_item__date">25 августа 2022</div>
+                            <a href="/about/news/519006.php" class="info_slider_item__name">Новый цвет в коллекции Равенна!</a>
+                            <a href="/about/news/519006.php" class="info_slider_item__descr">Один из самых популярных декоров теперь доступен для нашей классической коллекции.</a>
+                        </div>
+                    </div>
+                    <div class="info_slider__item">
+                        <div class="info_slider__container">
+                            <div class="info_slider_item__date">08 июля 2022</div>
+                            <a href="/about/news/515703.php" class="info_slider_item__name">Представляем новые кухни!</a>
+                            <a href="/about/news/515703.php" class="info_slider_item__descr">АРТИС продолжает расширять ассортимент кухонных коллекций. Встречайте новые серии с фрезерованными фасадами: «Капелла» и «Тиль». <br />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_slider__more">
+                    <a href="/about/news/" class="btn green__btn">Все новости</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <span id="salons_main" style="margin-top: -30px; margin-bottom: 30px"></span>
+        <div class="container" >
+            <div class="our_salons">
+                <div class="title" id="salons">Салоны</div>
+                <div class="our_salons__list">
+                    <div class="our_salons__item " data-region="/contacts/moskva/">
+                        <span>Москва</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/moskovskaya-oblast/">
+                        <span>Московская область</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/sankt-peterburg/">
+                        <span>Санкт-Петербург</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/nizhegorodskaya-oblast/">
+                        <span>Нижегородская область</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/kaluzhskaya-oblast/">
+                        <span>Калужская область</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/tverskaya-oblast/">
+                        <span>Тверская область</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/vladimirskaya-oblast/">
+                        <span>Владимирская область</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/ryazanskaya-oblast/">
+                        <span>Рязанская область</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/tulskaya-oblast/">
+                        <span>Тульская область</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/respublika-chuvashiya/">
+                        <span>Республика Чувашия</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/voronezhskaya-oblast/">
+                        <span>Воронежская область</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/lipetskaya-oblast/">
+                        <span>Липецкая область</span>
+                    </div>
+                    <div class="our_salons__item " data-region="/contacts/yaroslavskaya-oblast/">
+                        <span>Ярославская область</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="ajax_contacts">
+            <script>
+                var iObserver = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting === true) {
+                        let map = $(entries[0].target);
+                        if (!map.hasClass('loaded')) {
+                            map.addClass('loaded');
+                            $.get('?ajax=Y', function (html) {
+                                map.html(html);
+                                let js = document.createElement('script'),
+                                    js2 = document.createElement('script'),
+                                    css = document.createElement('link');
+                                js.src = "https://www.artis21.ru/local/templates/artis21.ru/components/bitrix/catalog.section/mainContacts_list/script.js";
+                                js2.src = "https://www.artis21.ru/local/templates/.default/components/bitrix/map.yandex.view/.default/script.js";
+                                css.href = "https://www.artis21.ru/local/templates/artis21.ru/components/bitrix/catalog.section/mainContacts_list/style.css";
+                                css.type = "text/css";
+                                css.rel = "stylesheet";
+                                document.getElementsByTagName('head')[0].appendChild(js);
+                                document.getElementsByTagName('head')[0].appendChild(css);
+                                document.getElementsByTagName('head')[0].appendChild(js2);
+                            });
+                        }
+                    }
+                }, {threshold: [0]}); // от 0 до 1, % видимой части элемента на экране
+
+                iObserver.observe(document.getElementById('ajax_contacts'));
+            </script>
+        </div>
+
+        <div class="container">
+            <div class="container">
+                <p>Корпусная мебель &laquo;АРТИС&raquo; &ndash; это высокое качество, разнообразие моделей и универсальные решения для любого интерьера. Мы предлагаем готовые коллекции для гостиных, спален, детских, прихожих и даже библиотек во всех популярных стилях, от классики до современности. Вы можете купить мебель от производителя в интернет-магазине компании &laquo;АРТИС&raquo;. Наши менеджеры подберут индивидуальную компоновку модулей.</p>
+
+                <h2>О нас</h2>
+
+                <p>Компания &laquo;АРТИС&raquo; основана в 2000 году и на протяжении 21 года создает корпусную мебель, стремясь превосходить все ожидания клиентов. Сейчас мы &ndash; один из ведущих производителей корпусной мебели в России. &laquo;АРТИС&raquo; в цифрах &ndash; это более 1&nbsp;000 сотрудников, 115 фирменных салонов в Москве и регионах, 20&nbsp;000 м&sup2; высокотехнологичного производства. Официальный интернет-магазин мебели от производителя &laquo;АРТИС&raquo; работает с 2008 года.</p>
+
+                <h2>Почему стоит выбрать нас</h2>
+
+                <ul>
+                    <li><b>Высокое качество</b>. Готовая мебель от производителя &laquo;АРТИС&raquo; &ndash; это европейская фурнитура Hettich и Blum, итальянские тренды и высокие стандарты экологической безопасности. Мы вдохновляемся знаменитыми зарубежными производителями и постоянно совершенствуем модельный ряд.</li>
+                    <li><b>Современные материалы</b>. &laquo;АРТИС&raquo; работает с материалами, которые делают мебель максимально удобной. Это пена с эффектом памяти Memory Foam, нежная и прочная искусственная замша для обивки мягкой мебели, долговечные фасады из МДФ и многое другое.</li>
+                    <li><b>Широкий ассортимент</b>. Шкафчики и диваны, туалетные столики, сверхсовременные стеллажи с бесшумными доводчиками или мебель в ретростилистике &ndash; мы создаем решения на любой вкус.</li>
+                    <li><b>Продуманный клиентский сервис</b>. &laquo;АРТИС&raquo; &ndash; это срочная доставка в течение 48 часов и сборка в день доставки, пятилетняя гарантия на каждый предмет мебели и безупречная репутация. Забота о клиенте &ndash; наш главный ориентир.</li>
+                </ul>
+
+                <p>Если вы хотите купить мебель напрямую от производителя, но не знаете, как она будет смотреться, &ndash; не проблема! Специалисты &laquo;АРТИС&raquo; бесплатно подготовят индивидуальный дизайн-проект и создадут 3D-модель интерьера &ndash; вы увидите все своими глазами. Просто свяжитесь с нами через сайт или по телефону, и мы тут же приступим к подготовке проекта.</p>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer_contacts__row">
+
+
+
+                    <div class="footer__nav">
+                        <div class="footer_nav__item">
+			<span class="footer_nav__item__mainLink">
+				<a href="/buyers/" style="color: #FFF;">Покупателям</a>
+				<div class="footer_nav__item__mainLink__toggle"><span>&rsaquo;</span></div>
+			</span>
+                            <div class="footer__subnav">
+                                <a href="/buyers/delivery/">Доставка</a>
+                                <a href="/vyzov-dizaynera/">Вызов дизайнера</a>
+                                <a href="/buyers/payment/">Оплата</a>
+                                <a href="/buyers/discount/">Дисконтная программа</a>
+                                <a href="/buyers/instructions/">Инструкции по сборке</a>
+                                <a href="/buyers/garantiya/">Гарантия</a>
+
+                            </div>
+                        </div>
+                        <div class="footer_nav__item">
+			<span class="footer_nav__item__mainLink">
+				<a href="/about/" style="color: #FFF;">О компании</a>
+				<div class="footer_nav__item__mainLink__toggle"><span>&rsaquo;</span></div>
+			</span>
+                            <div class="footer__subnav">
+                                <a href="/about/materials-and-technologies/">Материалы и технологии</a>
+                                <a href="/about/news/">Новости</a>
+                                <a href="/vacancy/">Вакансии</a>
+
+                            </div>
+                        </div>
+                        <div class="footer_nav__item">
+			<span class="footer_nav__item__mainLink">
+				<a href="/contacts/" style="color: #FFF;">Контакты</a>
+				<div class="footer_nav__item__mainLink__toggle"><span>&rsaquo;</span></div>
+			</span>
+                            <div class="footer__subnav">
+                                <a href="/contacts/uchebnyy-tsentr.php">Офис г. Москва</a>
+                                <a href="/contacts/golovnoy-ofis-i-proizvodstvo.php">Головной офис и производство</a>
+                                <a href="/contacts/suppliers/">Поставщикам</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer_contacts__col">
+                            <div itemscope itemtype="http://schema.org/Organization" style="display: none;">
+                                <div itemprop="name">Корпусная мебель «АРТИС»</div>
+                                <link itemprop="url" href="/">
+                                <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                    <span itemprop="postalCode">141441</span>,
+                                    <span itemprop="addressCountry">Россия</span>,
+                                    <span itemprop="addressRegion">Московская обл.</span>,
+                                    <span itemprop="addressLocality">Солнечногорский район, д. Елино</span>,
+                                    <span itemprop="streetAddress">ул. Летняя, стр. 1</span>
+                                </div>
+                                <div>Телефон: <a itemprop="telephone" href="tel:+74959660028">+7 (495) 966-00-28</a></div>
+                                <div>Почта: <a itemprop="email" href="mailto:mail@artis21.ru">mail@artis21.ru</a></div>
+                            </div>
+                            <div class="footer_contacts__head">Головной офис</div>
+                            с 09:00 до 20:00<br>
+                            <a class="footer_contacts__phone" href="tel:+7 (495) 966-00-28">+7 (495) 966-00-28</a><br>
+                            <a href="mailto:mail@artis21.ru">mail@artis21.ru</a>
+                        </div>
+                        <div class="footer_contacts__col">
+                            <div class="footer_contacts__side">
+                                <div class="footer_contacts__head">Интернет-магазин</div>
+                                с 10:00 до 21:00<br>
+                                <a class="footer_contacts__phone" href="tel:+7 (495) 720-26-48">+7 (495) 720-26-48</a><br>
+                                <a href="mailto:sales@artis21.ru">sales@artis21.ru</a><br>
+                            </div>
+                            <div class="footer_contacts__side">
+                                <a href="/buyers/feedback/" class="btn green_transparent__btn footer_contacts__btn">Обратная связь</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_copyright__row">
+                    <div class="footer__copyright">
+                        © 2000 – 2023 Корпусная мебель «АРТИС»<br>
+                        <a href="/politics/">Политика конфиденциальности</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="/sitemap/">Карта сайта</a>
+                    </div>
+                    <div class="footer__copyright">
+                        Создание сайта —<br>
+                        компания <a rel="nofollow" href="https://pixelplus.ru">«Пиксель Плюс»</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="scrolltop__btn"></div>
+<div class="overlay offset_leftcol__overlay"></div>
+
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/jquery-3.2.1.min.js"></script>
+
+
+<script type="text/javascript" src="https://www.artis21.ru/local/templates/artis21.ru/js/slick/slick.min.js"></script>
+
+<!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=d9edc0a7-0f68-404e-9dea-629f9fbe1126&lang=ru_RU"></script> -->
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/vendor/jquery.formstyler.js"></script>
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/vendor/jquery.maskedinput.js"></script>
+
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/vendor/jQueryUI/jquery-ui.min.js"></script>
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/vendor/jQueryUI/jquery.ui.touch-punch.min.js"></script>
+
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/jquery.lazyload.js"></script>
+
+<script src="/js/jquery.form/jquery.form.min.js"></script>
+<script src="/js/jquery.cookie.js"></script>
+
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/vendor/jquery.fancybox.min.js"></script>
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/vendor/svgxuse.min.js" defer></script>
+<![endif]-->
+
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/js/OverlayScrollbars.min.js" integrity="sha512-B1xv1CqZlvaOobTbSiJWbRO2iM0iii3wQ/LWnXWJJxKfvIRRJa910sVmyZeOrvI854sLDsFCuFHh4urASj+qgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/OverlayScrollbars.js"></script>
+<script src="https://www.artis21.ru/local/templates/.default/project.js"></script>
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/main.js?v=2"></script>
+<script src="https://www.artis21.ru/local/templates/artis21.ru/js/ingevents.4.0.9.min.js"></script>
+
+
+<script>
+    (function(w, d, s, h, id) {
+        w.roistatProjectId = id; w.roistatHost = h;
+        var p = d.location.protocol == "https:" ? "https://" : "http://";
+        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
+        var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+    })(window, document, 'script', 'cloud.roistat.com', 'd5d69aa8b1c45731898da2ea629787cb');
+</script>
+
+<script>!function(e,t,n,c,o){e[o]=e[o]||function(){(e[o].a=e[o].a||[]).push(arguments)},e[o].h=c,e[o].n=o,e[o].i=1*new Date,s=t.createElement(n),a=t.getElementsByTagName(n)[0],s.async=1,s.src=c,a.parentNode.insertBefore(s,a)}(window,document,"script","https://cdn2.searchbooster.net/scripts/v2/init.js","searchbooster"),searchbooster({"apiKey":"e9078f6c-6a71-45f0-8be7-c7b81bc341ef","apiUrl":"https://api.searchbooster.net","optimizeWidget":true,"theme":{"variables":{"color-primary":"#7ccb1d","color-secondary":"#7c8184","font-family-primary":"FranklinGothicBookITC","font-family-secondary":"FranklinGothicBookITC"}},"completions":{"active":true,"cart":true,"taps":{"mobile":{"active":true,"count":5},"desktop":{"active":true,"count":5}}},"segmentId":"","popup":true,"linkTargetBlank":false,"completionsFullWidth":false,"search":{"image":false,"catalog":true,"voice":false,"groupCategories":true,"groupByCategoriesSize":10,"limit":24,"limitNameChars":56},"layout":{"filterPosition":"left","templateOffer":"cell"},"offer":{"cart":false,"taps":{"mobile":{"active":false,"count":5},"desktop":{"active":false,"count":5}}},"cartCount":{"active":false,"completions":{"count":false},"offer":{"count":false}},"completionSettings":{"orders":["popular","categories","brands","history","suggestions","special_offers","offers"],"totalCompletionCount":18,"limits":{"popular":6,"categories":6,"brands":6,"history":6,"suggestions":6,"special_offers":6,"offers":12}},"additionalSort":"","sortVisible":true,"locale":"auto","initialized":function(sb) {
+            sb.mount({"selector":"#search-popup","widget":"search-popup","options":{"cartCount":{"active":false,"completions":{"count":false},"offer":{"count":false}},"additionalSort":"","sortVisible":true}});
+        }});</script>
+</body>
 </html>
