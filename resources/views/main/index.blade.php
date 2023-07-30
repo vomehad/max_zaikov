@@ -6,7 +6,7 @@
                 <i></i>
             </div>
             <a href="/">
-                <img src="https://www.artis21.ru/local/templates/artis21.ru/img/logo.svg" class="offset_leftcol__logo" alt="" width="147" height="35">
+                <img src="/logo_1.jpg" alt="" width="130" height="130">
             </a>
 
 
@@ -151,7 +151,7 @@
                     <i></i>
                 </div>
                 <a href="/" class="topper__logo">
-                    <img src="https://www.artis21.ru/local/templates/artis21.ru/img/logo.svg" alt="" width="147" height="35">
+                    <img src="/logo_1.jpg" alt="" width="130" height="130">
                 </a>
                 <div class="topper__contacts">
                     <div itemscope itemtype="http://schema.org/Organization" style="display: none;">
@@ -171,14 +171,11 @@
                     </div>
                     <div class="topper__contacts-row topper__contacts-row-ofice">
                         <div>
-
-
-
-                            <a href="tel:8 800 301 50 01" class="topper__contacts__phone">
+                            <a href="tel:8 800 60000" class="topper__contacts__phone">
                                 <div class="topper__contacts__phoneBlock">
                                     <img src="https://www.artis21.ru/local/templates/artis21.ru/img/phone_white.svg" alt="">
                                     <img class="topper__contacts__phoneBlock__grey" src="https://www.artis21.ru/local/templates/artis21.ru/img/phone_gray.svg" alt="">
-                                    <span>8 (800) 301-50-01</span>
+                                    <span>8 (800) 600 пока не звоните</span>
                                 </div>
                                 <div class="topper__contacts__grafik">
                                     Головной офис 9.00 - 20.00
@@ -188,11 +185,11 @@
                     </div>
                     <div class="topper__contacts-row topper__contacts-row-shop">
                         <div>
-                            <a href="tel:+7 (495) 720-26-48" class="topper__contacts__phone">
+                            <a href="tel:+7 (495) 6000" class="topper__contacts__phone">
                                 <div class="topper__contacts__phoneBlock">
                                     <img src="https://www.artis21.ru/local/templates/artis21.ru/img/phone_white.svg" alt="">
                                     <img class="topper__contacts__phoneBlock__grey" src="https://www.artis21.ru/local/templates/artis21.ru/img/phone_gray.svg" alt="">
-                                    <span>+7 (495) 720-26-48</span>
+                                    <span>+7 (495) 600-не дозвонитесь</span>
                                 </div>
                                 <div class="topper__contacts__grafik">
                                     Интернет-магазин 10.00 - 21.00
@@ -204,7 +201,7 @@
 
                 <div class="topper__contacts-row topper__contacts-row-buttons">
                     <div class="topper__contacts-row-buttons-row">
-                        <a href="https://wa.me/79250283213?text=Здравствуйте!%20Хочу%20вызвать%20дизайнера!" class="topper__contacts-row-buttons-whatsap-link" target="_blank" rel="nofollow">WhatsApp</a>
+                        <a href="https://wa.me/79066254899?text=Здравствуйте!%20Хочу%20вызвать%20дизайнера!" class="topper__contacts-row-buttons-whatsap-link" target="_blank" rel="nofollow">WhatsApp</a>
                         <a href="/vyzov-dizaynera/">Вызвать дизайнера</a>
                     </div>
                     <div class="topper__contacts-row-buttons-row">
